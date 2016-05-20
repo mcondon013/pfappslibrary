@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C9F5B7F-A119-4E05-A111-2BC304E737DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pfDataExtractorProcesxorCP</RootNamespace>
+    <AssemblyName>pfDataExtractorProcesxorCP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\pfDataExtractorProcesxorCP.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KellermanSoftware.Compare-NET-Objects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppDataForms">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppDataForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppDataObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppDataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFCollectionsObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFCollectionsObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFConnectionObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFConnectionObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFConnectionStrings">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFConnectionStrings.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataAccessObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataAccessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataOutputGrid, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataOutputGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataOutputProcessor, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataOutputProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDocumentGlobals">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDocumentGlobals.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDocumentObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDocumentObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFFileSystemObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFFileSystemObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFGlobalObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFGlobalObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFMessageLogs">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFMessageLogs.dll</HintPath>
+    </Reference>
+    <Reference Include="PFProcessObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFProcessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFProviderForms">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFProviderForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataExt">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataExt.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataForms">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataListProcessor">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataListProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataProcessor, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomValueDataTables">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomValueDataTables.dll</HintPath>
+    </Reference>
+    <Reference Include="PFSQLBuilderObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFSQLBuilderObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFSystemObjects, Version=3.0.5569.14088, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFSystemObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextFile">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextFile.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTimers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTimers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PFAppProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pfDataExtractorObjectsCP\pfDataExtractorObjectsCP.csproj">
+      <Project>{4916A020-5967-4DC7-8382-94FFBA8F0FFD}</Project>
+      <Name>pfDataExtractorObjectsCP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>..\..\..\..\..\Binaries\ProFast\CopyPFBinary.bat $(TargetPath) $(TargetFileName) $(ConfigurationName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

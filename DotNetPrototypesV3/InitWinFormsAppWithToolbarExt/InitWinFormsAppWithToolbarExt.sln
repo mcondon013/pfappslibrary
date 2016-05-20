@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitWinFormsAppWithToolbarExt", "InitWinFormsAppWithToolbarExt\InitWinFormsAppWithToolbarExt.csproj", "{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|x86 = CD_ROM|x86
+		Custom|x86 = Custom|x86
+		Debug|x86 = Debug|x86
+		DVD-10|x86 = DVD-10|x86
+		DVD-18|x86 = DVD-18|x86
+		DVD-5|x86 = DVD-5|x86
+		DVD-9|x86 = DVD-9|x86
+		Release|x86 = Release|x86
+		SingleImage|x86 = SingleImage|x86
+		WebDeployment|x86 = WebDeployment|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.CD_ROM|x86.ActiveCfg = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.CD_ROM|x86.Build.0 = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.Custom|x86.ActiveCfg = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.Custom|x86.Build.0 = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.Debug|x86.ActiveCfg = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.Debug|x86.Build.0 = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.DVD-10|x86.ActiveCfg = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.DVD-10|x86.Build.0 = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.DVD-18|x86.ActiveCfg = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.DVD-18|x86.Build.0 = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.DVD-5|x86.ActiveCfg = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.DVD-5|x86.Build.0 = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.DVD-9|x86.ActiveCfg = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.DVD-9|x86.Build.0 = Debug|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.Release|x86.ActiveCfg = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.Release|x86.Build.0 = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.SingleImage|x86.ActiveCfg = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.SingleImage|x86.Build.0 = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.WebDeployment|x86.ActiveCfg = Release|x86
+		{A300B19B-1D1E-4BB3-AB5B-A5BB9EA55170}.WebDeployment|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

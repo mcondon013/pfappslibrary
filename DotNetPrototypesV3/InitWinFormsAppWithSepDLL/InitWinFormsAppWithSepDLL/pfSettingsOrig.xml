@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<appKeysDataSet>
+  <xs:schema id="appKeysDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="appKeysDataSet" msdata:IsDataSet="true" msdata:MainDataTable="KeyValTable" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="KeyValTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="AppSetting" msdata:Caption="App Setting" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="SettingValue" msdata:Caption="Setting Value" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <KeyValTable>
+    <AppSetting>SaveErrorMessagesToErrorLog</AppSetting>
+    <SettingValue>true</SettingValue>
+  </KeyValTable>
+  <KeyValTable>
+    <AppSetting>ApplicationLogFileName</AppSetting>
+    <SettingValue>App.log</SettingValue>
+  </KeyValTable>
+  <KeyValTable>
+    <AppSetting>ApplicationName</AppSetting>
+    <SettingValue>InitWinFormsAppWithSepDLL</SettingValue>
+  </KeyValTable>
+  <KeyValTable>
+    <AppSetting>HelpFileName</AppSetting>
+    <SettingValue>InitWinFormsHelpFile.chm</SettingValue>
+  </KeyValTable>
+  <KeyValTable>
+    <AppSetting>appConfigManagerPath</AppSetting>
+    <SettingValue></SettingValue>
+  </KeyValTable>
+  <KeyValTable>
+    <AppSetting>Testkey01</AppSetting>
+    <SettingValue>test value 01</SettingValue>
+  </KeyValTable>
+  <KeyValTable>
+    <AppSetting>Testkey02</AppSetting>
+    <SettingValue>test value 02</SettingValue>
+  </KeyValTable>
+  <KeyValTable>
+    <AppSetting>Testkey03</AppSetting>
+    <SettingValue>test value 03</SettingValue>
+  </KeyValTable>
+  <KeyValTable>
+    <AppSetting>Testkey04</AppSetting>
+    <SettingValue>test value 04</SettingValue>
+  </KeyValTable>
+</appKeysDataSet>

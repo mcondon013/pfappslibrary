@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B95A8944-32A2-4F0D-A0AE-80D65DC1DB5B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PFAppDataForms</RootNamespace>
+    <AssemblyName>PFAppDataForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\PFAppDataForms.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KellermanSoftware.Compare-NET-Objects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppDataObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppDataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFCollectionsObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFCollectionsObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFFileSystemObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFFileSystemObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFGlobalObjects, Version=3.0.5923.16464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFGlobalObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFMessageLogs, Version=3.0.5923.16464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFMessageLogs.dll</HintPath>
+    </Reference>
+    <Reference Include="PFPrinterObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFPrinterObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFSystemObjects, Version=3.0.5923.16464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFSystemObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextBoxRuler, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextBoxRuler.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextFile, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextFile.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHelpAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHelpAbout.designer.cs">
+      <DependentUpon>CHelpAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MruListProcessor.cs" />
+    <Compile Include="PFFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PFFilterForm.designer.cs">
+      <DependentUpon>PFFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PFFixedLenColDefsOutputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PFFixedLenColDefsOutputForm.designer.cs">
+      <DependentUpon>PFFixedLenColDefsOutputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PFFixedLenColDefsInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PFFixedLenColDefsInputForm.designer.cs">
+      <DependentUpon>PFFixedLenColDefsInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PFFilterBuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PFFilterBuilderForm.designer.cs">
+      <DependentUpon>PFFilterBuilderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PFFixedLenColDefsVisualParseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PFFixedLenColDefsVisualParseForm.Designer.cs">
+      <DependentUpon>PFFixedLenColDefsVisualParseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CHelpAbout.resx">
+      <DependentUpon>CHelpAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFFilterForm.resx">
+      <DependentUpon>PFFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFFixedLenColDefsOutputForm.resx">
+      <DependentUpon>PFFixedLenColDefsOutputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFFixedLenColDefsInputForm.resx">
+      <DependentUpon>PFFixedLenColDefsInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFFilterBuilderForm.resx">
+      <DependentUpon>PFFilterBuilderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFFixedLenColDefsVisualParseForm.resx">
+      <DependentUpon>PFFixedLenColDefsVisualParseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyHH.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>..\..\..\..\..\Binaries\ProFast\CopyPFBinaryPlusCompareObjectsDLL.bat $(TargetPath) $(TargetFileName) $(ConfigurationName) $(TargetDir)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

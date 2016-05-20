@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4916A020-5967-4DC7-8382-94FFBA8F0FFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pfDataExtractorObjectsCP</RootNamespace>
+    <AssemblyName>pfDataExtractorObjectsCP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\pfDataExtractorObjectsCP.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KellermanSoftware.Compare-NET-Objects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppDataForms">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppDataForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppDataObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppDataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFCollectionsObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFCollectionsObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataAccessObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataAccessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDocumentGlobals, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDocumentGlobals.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDocumentObjects">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDocumentObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFGlobalObjects, Version=3.0.5505.25638, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFGlobalObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataProcessor">
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextFile, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnumsAndStructs.cs" />
+    <Compile Include="PFDelimitedTextFileDestination.cs" />
+    <Compile Include="PFDelimitedTextFileSource.cs" />
+    <Compile Include="PFExtractorDefinition.cs" />
+    <Compile Include="PFExtractorOutputOptions.cs" />
+    <Compile Include="PFFixedLengthTextFileDestination.cs" />
+    <Compile Include="PFFixedLengthTextFileSource.cs" />
+    <Compile Include="PFMsAccessDestination.cs" />
+    <Compile Include="PFMsAccessSource.cs" />
+    <Compile Include="PFMsExcelDestination.cs" />
+    <Compile Include="PFMsExcelSource.cs" />
+    <Compile Include="PFRandomOrdersDefinition.cs" />
+    <Compile Include="PFRelationalDatabaseDestination.cs" />
+    <Compile Include="PFRelationalDatabaseSource.cs" />
+    <Compile Include="PFTestOrdersGenerator.cs" />
+    <Compile Include="PFXmlFileDestination.cs" />
+    <Compile Include="PFXmlFileSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>..\..\..\..\..\Binaries\ProFast\CopyPFBinary.bat $(TargetPath) $(TargetFileName) $(ConfigurationName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CBC2F13-E40C-4010-B68E-75BB9AB01BE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestprogRandomDataProcessor</RootNamespace>
+    <AssemblyName>TestprogRandomDataProcessor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppDataObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppDataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppUtils, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="PFCollectionsObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFCollectionsObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataAccessObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataAccessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataGridViewColumnSelector, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataGridViewColumnSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataOutputGrid, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataOutputGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="PFFileSystemObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFFileSystemObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFGlobalObjects, Version=3.0.5958.19865, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFGlobalObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFMessageLogs, Version=3.0.5958.17731, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFMessageLogs.dll</HintPath>
+    </Reference>
+    <Reference Include="PFPrinterObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFPrinterObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFProcessObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFProcessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataExt, Version=3.0.0.28437, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataExt.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataProcessor, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomValueDataTables, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomValueDataTables.dll</HintPath>
+    </Reference>
+    <Reference Include="PFSQLServerCE35Objects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFSQLServerCE35Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFSystemObjects, Version=3.0.5958.17731, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFSystemObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextFile, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextFile.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTimers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTimers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PFAppProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>..\..\..\..\..\Binaries\ProFast\CopyPFBinary.bat $(TargetPath) $(TargetFileName) $(ConfigurationName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+pfAppConfigManagerExp adds capability to export config settings to Excel, Access, fixed length, csv, etc. files.

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8707D299-61E9-406B-A0CC-B56AB49786D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PFRandomDataForms</RootNamespace>
+    <AssemblyName>PFRandomDataForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\PFRandomDataForms.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KellermanSoftware.Compare-NET-Objects, Version=3.1.0.0, Culture=neutral, PublicKeyToken=d970ace04cc85217, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppDataObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppDataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFAppUtils, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFAppUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="PFCollectionsObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFCollectionsObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFConnectionObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFConnectionObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFConnectionStrings, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFConnectionStrings.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataAccessObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataAccessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataGridViewColumnSelector, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataGridViewColumnSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataGridViewDisableButtonCell, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataGridViewDisableButtonCell.dll</HintPath>
+    </Reference>
+    <Reference Include="PFDataOutputGrid, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFDataOutputGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="PFEncryptionObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFEncryptionObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFFileSystemObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFFileSystemObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFGlobalObjects, Version=3.0.5923.16464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFGlobalObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFMessageLogs, Version=3.0.5923.16464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFMessageLogs.dll</HintPath>
+    </Reference>
+    <Reference Include="PFPrinterObjects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFPrinterObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataExt, Version=3.0.0.20096, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataExt.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataListProcessor, Version=3.0.0.20104, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataListProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomDataProcessor, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomDataProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="PFRandomValueDataTables, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFRandomValueDataTables.dll</HintPath>
+    </Reference>
+    <Reference Include="PFSQLServerCE35Objects, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFSQLServerCE35Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFSystemObjects, Version=3.0.5923.16464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFSystemObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextFile, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextFile.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTextObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTextObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTimers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\ProFast\ClassLibraries\Release\PFTimers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHelpAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHelpAbout.designer.cs">
+      <DependentUpon>CHelpAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RandomBooleansForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomBooleansForm.designer.cs">
+      <DependentUpon>RandomBooleansForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomBytesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomBytesForm.designer.cs">
+      <DependentUpon>RandomBytesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomCustomValuesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomCustomValuesForm.designer.cs">
+      <DependentUpon>RandomCustomValuesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomDataElementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomDataElementsForm.designer.cs">
+      <DependentUpon>RandomDataElementsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomDataFormsManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomDataFormsManager.Designer.cs">
+      <DependentUpon>RandomDataFormsManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomDataRequestDeleteListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomDataRequestDeleteListForm.designer.cs">
+      <DependentUpon>RandomDataRequestDeleteListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomDataRequestOpenListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomDataRequestOpenListForm.designer.cs">
+      <DependentUpon>RandomDataRequestOpenListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomDataRequestRenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomDataRequestRenameForm.designer.cs">
+      <DependentUpon>RandomDataRequestRenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MruListProcessor.cs" />
+    <Compile Include="RandomDataRequestRenameListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomDataRequestRenameListForm.designer.cs">
+      <DependentUpon>RandomDataRequestRenameListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomDateTimesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomDateTimesForm.designer.cs">
+      <DependentUpon>RandomDateTimesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomNamesAndLocationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomNamesAndLocationsForm.designer.cs">
+      <DependentUpon>RandomNamesAndLocationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomNumbersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomNumbersForm.designer.cs">
+      <DependentUpon>RandomNumbersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomizerColumnSpecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomizerColumnSpecForm.designer.cs">
+      <DependentUpon>RandomizerColumnSpecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomStringsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomStringsForm.designer.cs">
+      <DependentUpon>RandomStringsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomWordsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomWordsForm.designer.cs">
+      <DependentUpon>RandomWordsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CHelpAbout.resx">
+      <DependentUpon>CHelpAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomBooleansForm.resx">
+      <DependentUpon>RandomBooleansForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomBytesForm.resx">
+      <DependentUpon>RandomBytesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomCustomValuesForm.resx">
+      <DependentUpon>RandomCustomValuesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomDataElementsForm.resx">
+      <DependentUpon>RandomDataElementsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomDataFormsManager.resx">
+      <DependentUpon>RandomDataFormsManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomDataRequestDeleteListForm.resx">
+      <DependentUpon>RandomDataRequestDeleteListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomDataRequestOpenListForm.resx">
+      <DependentUpon>RandomDataRequestOpenListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomDataRequestRenameForm.resx">
+      <DependentUpon>RandomDataRequestRenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomDataRequestRenameListForm.resx">
+      <DependentUpon>RandomDataRequestRenameListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomDateTimesForm.resx">
+      <DependentUpon>RandomDateTimesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomNamesAndLocationsForm.resx">
+      <DependentUpon>RandomNamesAndLocationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomNumbersForm.resx">
+      <DependentUpon>RandomNumbersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomizerColumnSpecForm.resx">
+      <DependentUpon>RandomizerColumnSpecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomStringsForm.resx">
+      <DependentUpon>RandomStringsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomWordsForm.resx">
+      <DependentUpon>RandomWordsForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>..\..\..\..\..\Binaries\ProFast\CopyPFBinary.bat $(TargetPath) $(TargetFileName) $(ConfigurationName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
